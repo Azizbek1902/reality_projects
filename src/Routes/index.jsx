@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "../views/shop/Home";
 import Products from "../views/productCrud/Products";
+import GetOne from "../views/shop/GetOne";
 import Cart from "../views/shop/Cart";
 import AddProd from "../views/productCrud/AddProd";
 import Navbar from "../components/Navbar";
@@ -13,6 +14,7 @@ export default () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/getOne" element={<GetOne />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/admin" element={<AddProd />} />
       </Routes>

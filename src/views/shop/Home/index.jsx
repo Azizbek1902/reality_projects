@@ -2,11 +2,13 @@ import { MdAddShoppingCart } from "react-icons/md";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useCart } from "react-use-cart";
+import { useNavigate } from "react-router-dom";
 
 export default () => {
   const url = "http://localhost:8080/products";
   const { addItem } = useCart();
   const [data, setData] = useState([]);
+  const navigate = useNavigate();
   useEffect(() => {
     axios
       .get(url)
@@ -30,8 +32,13 @@ export default () => {
                     <div className="bg-[#ffffff] rounded-lg">
                       <img
                         src={item.img}
+                        onClick={() => {
+                          navigate("/getOne", {
+                            state: item,
+                          });
+                        }}
                         alt=""
-                        className="rounded-ss-[40px] rounded-lg  rounded-ee-[40px] w-full h-[250px]"
+                        className="rounded-ss-[40px] cursor-pointer rounded-lg  rounded-ee-[40px] w-full h-[250px]"
                       />
                     </div>
                     <div className="p-3">
