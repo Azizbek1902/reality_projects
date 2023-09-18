@@ -54,8 +54,13 @@ export default () => {
                     <div className="bg-[#ffffff] rounded-lg">
                       <img
                         src={item.img}
+                        onClick={() => {
+                          navigate("/getOne", {
+                            state: item,
+                          });
+                        }}
                         alt=""
-                        className="rounded-ss-[40px] rounded-lg  rounded-ee-[40px] w-full h-[250px]"
+                        className="rounded-ss-[40px] cursor-pointer rounded-lg  rounded-ee-[40px] w-full h-[250px]"
                       />
                     </div>
                     <div className="p-3">
