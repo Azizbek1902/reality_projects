@@ -37,7 +37,6 @@ export default () => {
       })
       .catch((err) => console.log(err));
   };
-  
   return (
     <div className="grid grid-cols-12">
       <div className="bg-white shadowCard border-r-2 flex justify-center items-center col-span-2 w-full min-h-[91vh] max-h-full">
