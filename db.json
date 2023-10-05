@@ -7,5 +7,227 @@
       "price": 10000,
       "id": "2023-09-18T08:13:08.241Z"
     }
+  ],
+  "students": [
+    {
+      "id": "2023-09-29T09:52:16.491Z",
+      "firstName": "aaaa",
+      "lastName": "aaaaaa",
+      "address": "aaaaaaaa",
+      "phone": "11111",
+      "classId": "10-A",
+      "status": false
+    },
+    {
+      "id": "2023-09-29T09:52:25.920Z",
+      "firstName": "ssssssss",
+      "lastName": "ssssssss",
+      "address": "sssssss",
+      "phone": "(91)-111-78-14",
+      "classId": "10-A",
+      "status": false
+    },
+    {
+      "id": "2023-09-29T09:52:43.264Z",
+      "firstName": "ddddddddddd",
+      "lastName": "ddddddd",
+      "address": "dddddddd",
+      "phone": "(11)-111-11-11",
+      "classId": "10-A",
+      "status": false
+    },
+    {
+      "id": "2023-09-29T09:52:58.248Z",
+      "firstName": "nnn",
+      "lastName": "nnnnn",
+      "address": "nnnnnn",
+      "phone": "(35)-327-56-98",
+      "classId": "7-b",
+      "status": false
+    },
+    {
+      "id": "2023-09-29T09:53:07.672Z",
+      "firstName": "vvvvvv",
+      "lastName": "vvvvvv",
+      "address": "vvvv",
+      "phone": "67675765",
+      "classId": "7-b",
+      "status": false
+    },
+    {
+      "id": "2023-09-29T09:53:14.249Z",
+      "firstName": "gdsf",
+      "lastName": "sefes",
+      "address": "fesfes",
+      "phone": "3432423",
+      "classId": "7-b",
+      "status": false
+    }
+  ],
+  "class": [
+    {
+      "name": "10-A",
+      "roomId": "14-xona",
+      "id": "2023-09-29T09:48:12.183Z"
+    },
+    {
+      "id": "2023-09-29T09:49:06.024Z",
+      "name": "7-b",
+      "roomId": "8-xona"
+    }
+  ],
+  "room": [
+    {
+      "name": "8-xona",
+      "id": "2023-09-29T09:47:58.608Z"
+    },
+    {
+      "id": "2023-09-29T09:48:28.495Z",
+      "name": "14-xona"
+    }
+  ],
+  "teacher": [
+    {
+      "id": "2023-09-29T09:50:24.168Z",
+      "firstName": "mmmmmm",
+      "lastName": "mm",
+      "phone": "666666",
+      "address": "mmmmmmm",
+      "lesson": "Fizika"
+    },
+    {
+      "firstName": "n",
+      "lastName": "nnnnnnnnnn",
+      "phone": "444444",
+      "address": "nnnnnnn",
+      "lesson": "Matem",
+      "id": "2023-09-29T09:50:37.088Z"
+    }
+  ],
+  "lesson": [
+    {
+      "id": "2023-09-29T09:47:45.010Z",
+      "name": "Fizika"
+    },
+    {
+      "id": "2023-09-29T09:47:51.291Z",
+      "name": "Matem"
+    }
+  ],
+  "attendance": [
+    {
+      "date": "2023-09-28",
+      "students": [
+        {
+          "studentId": "2023-09-29T09:52:16.491Z",
+          "status": true
+        },
+        {
+          "studentId": "2023-09-29T09:52:25.920Z",
+          "status": false
+        },
+        {
+          "studentId": "2023-09-29T09:52:43.264Z",
+          "status": false
+        }
+      ],
+      "studentClass": "10-A",
+      "id": 1
+    },
+    {
+      "date": "2023-09-26",
+      "students": [
+        {
+          "studentId": "2023-09-29T09:52:58.248Z",
+          "status": false
+        },
+        {
+          "studentId": "2023-09-29T09:53:07.672Z",
+          "status": true
+        },
+        {
+          "studentId": "2023-09-29T09:53:14.249Z",
+          "status": true
+        }
+      ],
+      "studentClass": "7-b",
+      "id": 2
+    },
+    {
+      "date": "2023-09-27",
+      "students": [
+        {
+          "studentId": "2023-09-29T09:52:16.491Z",
+          "status": true
+        },
+        {
+          "studentId": "2023-09-29T09:52:25.920Z",
+          "status": false
+        },
+        {
+          "studentId": "2023-09-29T09:52:43.264Z",
+          "status": true
+        }
+      ],
+      "studentClass": "10-A",
+      "id": 3
+    },
+    {
+      "date": "2023-09-29",
+      "students": [
+        {
+          "studentId": "2023-09-29T09:52:16.491Z",
+          "status": true
+        },
+        {
+          "studentId": "2023-09-29T09:52:25.920Z",
+          "status": false
+        },
+        {
+          "studentId": "2023-09-29T09:52:43.264Z",
+          "status": true
+        }
+      ],
+      "studentClass": "10-A",
+      "id": 4
+    },
+    {
+      "date": "2023-09-28",
+      "students": [
+        {
+          "studentId": "2023-09-29T09:52:58.248Z",
+          "status": true
+        },
+        {
+          "studentId": "2023-09-29T09:53:07.672Z",
+          "status": false
+        },
+        {
+          "studentId": "2023-09-29T09:53:14.249Z",
+          "status": true
+        }
+      ],
+      "studentClass": "7-b",
+      "id": 5
+    },
+    {
+      "date": "2023-09-29",
+      "students": [
+        {
+          "studentId": "2023-09-29T09:52:58.248Z",
+          "status": false
+        },
+        {
+          "studentId": "2023-09-29T09:53:07.672Z",
+          "status": true
+        },
+        {
+          "studentId": "2023-09-29T09:53:14.249Z",
+          "status": false
+        }
+      ],
+      "studentClass": "7-b",
+      "id": 6
+    }
   ]
 }
