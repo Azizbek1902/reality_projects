@@ -13,3 +13,11 @@
   -moz-box-shadow: 0px 0px 25px 3px rgba(183, 183, 183, 0.695);
   box-shadow: 0px 0px 25px 3px rgba(183, 183, 183, 0.695);
 }
+.tranasition {
+  transition: 0.3s ease-in-out;
+}
+.sidebar {
+  -webkit-box-shadow: 0px 0px 15px 10px rgba(34, 60, 80, 0.1);
+  -moz-box-shadow: 0px 0px 15px 10px rgba(34, 60, 80, 0.1);
+  box-shadow: 0px 0px 15px 10px rgba(34, 60, 80, 0.1);
+}

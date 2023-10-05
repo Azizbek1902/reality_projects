@@ -1,4 +1,4 @@
-import { HiOutlineShoppingCart } from "react-icons/hi";
+import { BsFillPersonBadgeFill } from "react-icons/bs";
 import { SlClose } from "react-icons/sl";
 import { CgMenu } from "react-icons/cg";
 import { Disclosure } from "@headlessui/react";
@@ -6,8 +6,13 @@ import { Link } from "react-router-dom";
 import { useCart } from "react-use-cart";
 
 const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "Products", href: "/products", current: false },
+  { name: "Students", href: "/", current: true },
+  { name: "Classes", href: "/class", current: false },
+  { name: "Rooms", href: "/room", current: false },
+  { name: "Teachers", href: "/teacher", current: false },
+  { name: "Lessons", href: "/lesson", current: false },
+  { name: "Attendance", href: "/attendence", current: false },
+  { name: "Report", href: "/report", current: false },
 ];
 
 function classNames(...classes) {
@@ -16,7 +21,6 @@ function classNames(...classes) {
 
 export default () => {
   const { totalItems } = useCart();
-  console.log(totalItems, 'dddd')
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -24,7 +28,6 @@ export default () => {
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                {/* Mobile menu button*/}
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
@@ -38,7 +41,7 @@ export default () => {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="h-8 w-auto"
+                    className="h-8 w-auto text-white"
                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                     alt="Your Company"
                   />
@@ -63,7 +66,8 @@ export default () => {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-10 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              {/* shopp app */}
+              {/* <div className="absolute inset-y-0 right-0 flex items-center pr-10 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"
                   className="relative rounded-full bg-gray-800 p-1 pr-8  text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -74,6 +78,14 @@ export default () => {
                       {totalItems}
                     </span>
                   </Link>
+                </button>
+              </div> */}
+              <div className="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <button
+                  type="button"
+                  className="relative rounded-full bg-gray-800 p-1 text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                >
+                  <BsFillPersonBadgeFill size={30} />
                 </button>
               </div>
             </div>
